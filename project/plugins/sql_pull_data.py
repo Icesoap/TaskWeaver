@@ -38,9 +38,12 @@ class SqlPullData(Plugin):
 
             Question: {question}
             SQL Query:"""
+        print(template)
         prompt = ChatPromptTemplate.from_template(template)
 
+        print(self.config.get("sqlite_db_path"))
         db = SQLDatabase.from_uri(self.config.get("sqlite_db_path"))
+        print(db)
 
         def get_schema(_):
             return db.get_table_info()

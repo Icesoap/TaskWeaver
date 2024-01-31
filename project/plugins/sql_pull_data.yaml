@@ -25,8 +25,15 @@ returns:
 
 configurations:
   api_type: openai
-  api_base:
-  api_key:
-  api_version:
-  deployment_name:
-  sqlite_db_path: sqlite:///../../../../sample_data/anomaly_detection.db
+#  api_base: https://api.openai.com/v1
+  api_base: https://api.openai.com/v1/completions
+  api_key: "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"
+#  api_version: "gpt-4-1106-preview"
+#  api_version: "gpt-4"
+  api_version: "gpt-3.5-turbo"
+#  api_version: "gpt-3.5-turbo"
+#  deployment_name: gpt-4-1106-preview
+#  deployment_name: gpt-4
+  deployment_name: gpt-3.5-turbo
+  sqlite_db_path: sqlite:///E:\\work-space\\demo-workspace\\github\\fork\\TaskWeaver\\project\\sample_data\\anomaly_detection.db
+#  sqlite_db_path: sqlite:///../sample_data/anomaly_detection.db

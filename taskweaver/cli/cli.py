@@ -1,10 +1,15 @@
 import click
 
-from ..app import TaskWeaverApp
-from .chat import chat
-from .init import init
-from .util import CliContext, get_ascii_banner
-from .web import web
+# from ..app import TaskWeaverApp
+# from .chat import chat
+# from .init import init
+# from .util import CliContext, get_ascii_banner
+# from .web import web
+from taskweaver.app import TaskWeaverApp
+from taskweaver.cli.chat import chat
+from taskweaver.cli.init import init
+from taskweaver.cli.util import CliContext, get_ascii_banner
+from taskweaver.cli.web import web
 
 
 @click.group(
